@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Brenden Brusberg - Machine Learning</title>
+	  <link rel="icon" href="../img/b.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Theme CSS -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Brenden Brusberg</a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../img/ml.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Macine Learning</h1>
+                        <hr class="small">
+                        <span class="subheading">Projects in Artificial Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+              <p>
+			  Machine learning is like any program where you give the comptuer input and it gives you output. However, machine learning is when the computer does not particully knows either the correct output, input, or how to get there. So computer scientists design a function, algorithm or neural network that can maipulate the data logically.
+			  This is mostly done with a neural network, a web of neurons or nodes that have a principle of all or nothing. The principle of all or nothing is defined by having all input neurons firing to fire the intaking neuron. 
+			  </p>
+			  <img class="img-responsive" src="../img/mlnetwork.png" alt="">
+			  <p>So we have input and a certain output we want, so we define a task for the program to run. So we can create a neural network to complete this task or we can use evolution. So, now we are generating a random set of neural network based off of random principles to fire each base neuron connecting to random neurals.
+				In evolution a species ability to pass on its traits is based on its fitness. Now we take our randomly generated neural networks and put it through a task and give it a fitness value(This task usually designates how will it will give the correct output).
+				Then evolution takes over and we kill the lower 50% or so of the neural networks with the lowest fitness values. We allow a random few survive and also randomly kill off some of the more fit neural networks. Finally we minutely and randomly change the surviving neural networks and then run these through the same test and evolution process for as many iterations untill we find a network able to complete the task.
+				This is otherwise known as the NEAT algorithm(NeuroEvolution of Augmenting Topologies).
+				</p>
+				<h2>Projects involving Machine Learning</h2>
+				<p>
+					I do not expect these projects to be finished anytime soon working on these projects by my self. The first project I am working on came to me when I saw some freinds playing <a href="https://geoguessr.com/">Geoguesser</a>.
+					Geoguesser is a game where you are dropped somewhere in the world using google maps street view and you have one guess to guess where you are in the world. How many points you recieve is dependent on how close your guess is to the actual destination. You have 5 rounds all in different locations.
+					It popped into my head that the game is actually a test that gives a fitness score based on how well a guess is made. So I planned out a neural network based low level nodes visually stimulated by lines, shapes, colors and using the NEAT algorithm to process a range of longitude and latitude values. Then using the
+					Google Maps api to for fitness value. I am thinking of renting a server to run this program over many iterations(Also thinking about running a server for Problemm 566 on Project Euler) atht esame time to complete the task in a timely manner. I was wondering if the neural network would randomly evolve to base its
+					geolocation on color, if it could recognize types of trees or cars, could it even learn to read languages on its own and base its location on that alone? There are so many possibilties.
+				</p>
+				<p>
+					My next project I was thinking of conducting if I ever get the time for this massive undertaking is also about visual recognisation. I was thinking about shredding paper and if a computer could reconstruct the image. I know of some programs that can poorly do it, but I wonder
+					if a computer can learn to do so. By scanning the original image to be the expected output and shredding the paper completely randomly to be inputted into the computer, would the computer learn how to reconstruct the image? This would be done by using the NEAT algorithm to test the percentage correct of a neural networks output as its fittness value.
+					Would the neural network reconstruct it properly by brute forcing it, seeing complex shapes and patterns in prints, or would any neural networks even find a way of conducting such a task?
+				</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+            
+                        <li>
+                            <a href="https://www.facebook.com/brenden.brusberg">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bobjoetom">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">No copyRight :D, Updated 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script>
+</body>
+</html>

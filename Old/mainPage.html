@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		
+		<title>Brenden Brusberg</title>
+	</head>
+  
+	<body>
+		<div class="container-fluid" style = "background: #9BB6D1; padding: 20px;">
+		
+			<header>
+				<div class="wrapper" style = "background: #9BB6D1;padding: 10px;">
+					<h1>Brenden Brusberg<h1>
+					<h3>My Personal Website<h3>
+				</div>
+			</header>
+			
+			<nav role="navigation" style = "background: #9BB6D1;padding: 5px;" >
+				<ul class="nav nav-tabs" style = "background: #9BB6D1;padding: 5px;">
+					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+					<li><a data-toggle="tab" href="#myProjects">My Projects</a></li>
+					<li><a data-toggle="tab" href="#myCode">My Code</a></li>
+					<li><a data-toggle="tab" href="#hobbies">Hobbies</a></li>
+					<li><a data-toggle="tab" href="#aboutMe">About Me</a></li>
+					<li><a data-toggle="tab" href="#myResume">My Resume</a></li>
+					<li><a data-toggle="tab" href="#contactMe">Contact Me</a></li>
+				</ul>
+			</nav>
+		</div>
+  
+		<div class="content" style = "background: #9BB6D1; padding: 20px;">
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<h3>Welcome To My Website</h3>
+					<p>It is currently under construction. I will be placing my resume, projects and other accomplishments on this website.</p>
+				</div>
+				
+				<div id="myProjects" class="tab-pane fade" >
+					<h1>My Projects</h1>
+					<p>My Projects.d</p>
+				</div>
+				
+				<div id="myCode" class="tab-pane fade">
+				</div>
+				
+				<div id="hobbies" class="tab-pane fade">
+				</div>
+				
+				<div id="aboutMe" class="tab-pane fade">
+				</div>
+				
+				<div id="myResume" class="tab-pane fade">
+				</div>
+				
+				<div id="contactMe" class="tab-pane fade">
+					<p>You can email me at brenbrus@gmail.com</p>
+					<p><a href="https://github.com/BobJoeTom" target="_blank">Github</a><p>
+					<p><a href="www.linkedin.com/in/brenbrus" target="_blank">Linkedin</a><p>
+				</div>
+				
+			</div>
+		</div>
+
+		
+		<script>
+				$(document).ready(function(){
+					$(".nav-tabs a").click(function(){
+					$(this).tab('show');
+					});
+				});
+		</script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

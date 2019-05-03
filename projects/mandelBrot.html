@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Brenden Brusberg - Mandelbrot and Julia Set</title>
+	<link rel="icon" href="../img/b.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Theme CSS -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Brenden Brusberg</a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../img/fractal.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Mandelbrot and Julia Set Calculator</h1>
+                        <hr class="small">
+                        <span class="subheading">One of my secret loves</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<p>
+					So before the end of my junior year I really liked math. Who doesn't like these logical problems. I connected the dots and saw how to apply math knowledge and wanted to continue my math career. Thus, I took a summer calculus course to get into BC calc my senior year. There I actually learned to love math. I really started searching out math history and broaden my knowledge of math to what is not just taught in the class. Since my programming and computer science knowledge prior to the class was strengthened because I crossed the confidence valley.
+				</p>
+				<img class="img-responsive" src="../img/codingConf.png" alt="">
+				<p>
+					Everything I learned in that alc class was applicable to my programming career. I will soon be putting those projects on my github. So in my endeavour I was finding new math theorems, essays(Some that did not have adequate space in the margins :P), professors, and subjects like topology, shapes, etc. Then I saw the Mandelbrot set. What the *$*! is this, its so crazy and pleasing to look at. Then at computer science club we would watch a mandelbrot zoom for actual dozens of minutes(We are weird). I just had to make one!
+				</p>
+				<p>
+					Boring Math: The Mandelbrot set is the set of complex numbers c for which the function f(z) = z^2 + c does not diverge when iterated from z=0, i.e., for which the sequence f(0),f(f(0)), etc., remains bounded in absolute value. Basically it is the set of all complex numbers on a complex plane that converge with their output of a fractal after X iterations. Coloring for the outside of the set is done by seeing how many iterations it completes before it diverges to infinity. Coloring on the inside is done by the distance of the point to the origin(remember it's a complex plane so it's going to have a cool coloring affect).
+				</p>
+				<p>
+					Check out the code on my  <a href="https://github.com/bobjoetom">Github</a>. It works on newer phones because of needed memory management. Basically the code tanks the input of where you want the base coords of a Julia set. If 0+0i is entered(0 for a, 0 for b for a+bi) then it will generate a mandelbrot set according to how many iterations and degree of epsilon. The code then generates the sets by moving through the real and imaginary axes by the amount epsilon and putting the coordinate through the according fractal.
+				</p>
+				<p>
+					What I personally love about this set of number is that it demonstrates the infinite gap between any 2 points. If you were to zoom into one singular point on the set near the edge you will see the set repeat with in itself and within that repeat you will see the same set. Also you will see every julia set. It shows the abstract complexity within the beauty of math shown through colors.
+				</p>
+				<h2>
+					Mandelbrot
+				</h2>
+				<img class="img-responsive" src="../img/mandelbrot.png" alt="">
+				<h2>
+					My favourite Julia sets
+				</h2>
+				<img class="img-responsive" src="../img/julia1.png" alt="">
+				<img class="img-responsive" src="../img/julia2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+            
+                        <li>
+                            <a href="https://www.facebook.com/brenden.brusberg">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bobjoetom">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">No copyRight :D, Updated 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script>
+</body>
+</html>
